@@ -1,167 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Journal Events</title>
-</head>
-<body>
-   <div class="container">
-        <h1> 
-                Journal Events
-            </h1>
-        
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sem eget eu lectus, odio penatibus himenaeos conubia nam mattis feugiat litora proin fringilla, lacus vitae consequat suscipit etiam porta purus parturient congue praesent.
-        </p>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Journal Events
+      </h1>
 
-        
-        <div class="form-group">
-                <label for="date" class="col-sm-2 col-form-label"
-                  >Date </label
-                ><br />
-                <input
-                  class="form-control"
-                  type="date"
-                  name="calendar"
-                  id="date_field"
-                />
-              </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit sem eget eu
+        lectus, odio penatibus himenaeos conubia nam mattis feugiat litora proin
+        fringilla, lacus vitae consequat suscipit etiam porta purus parturient
+        congue praesent.
+      </p>
 
-              <div class = "form-group">
-                  <label for="event" class="col-sm-2 col-form-label">
-                      Event
-                  </label>
-                  <br>
-                  <input class="form-control"
-                  type="text"
-                  name="event"
-                  id="event_field">
+      <div class="form-group">
+        <label for="date" class="col-sm-2 col-form-label">Date </label><br />
+        <input
+          class="form-control"
+          type="date"
+          name="calendar"
+          id="date_field"
+        />
+       <br />
+        <label for="event" class="col-sm-2 col-form-label">
+          Event
+        </label>
+        <br />
+        <input class="form-control" type="text" name="event" id="event_field" />
+      <br/>
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="accident_switch"
+          />
+          <label class="custom-control-label" for="accident_switch"
+            >Accident?</label
+          >
+          <br/>
+          <button type="button" class="btn btn-danger" id="submit_btn" disabled>
+            Add
+          </button>
+      </div>
 
+      <section>
+        <table class="table table-hover">
+          <thead>
+            <td colspan="3">Monday</td>
+            <tr class="table-dark">
+              <th scope="col">Date</th>
+              <th scope="col">Event</th>
+              <th scope="col">Accident?</th>
+            </tr>
+          </thead>
+          <tbody id="table_body"></tbody>
+        </table>
+      </section>
 
-              </div>
+      <section>
+        <table class="table table-hover">
+          <thead>
+            <td colspan="3">Thursday</td>
+            <tr class="table-dark">
+              <th scope="col">Date</th>
+              <th scope="col">Event</th>
+              <th scope="col">Accident?</th>
+            </tr>
+          </thead>
+          <tbody id="table_body"></tbody>
+        </table>
+      </section>
 
-              <div class="form-group">
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="accident_switch"
-                      />
-                      <label class="custom-control-label" for="accident_switch"
-                        >Accident?</label
-                      >
-                    </div>
-                  </div>
+      <section>
+        <table class="table table-hover">
+          <thead>
+            <td colspan="3">Wednesday</td>
+            <tr class="table-dark">
+              <th scope="col">Date</th>
+              <th scope="col">Event</th>
+              <th scope="col">Accident?</th>
+            </tr>
+          </thead>
+          <tbody id="table_body"></tbody>
+        </table>
+      </section>
 
-                  <div class="form-group">
-                        <button type="button" class="btn btn-danger" id="submit_btn" disabled>
-                          Add
-                        </button>
-                      </div>
-   
-                      <section>
-                            <table class="table table-hover">
-                              <thead>
-                                <td colspan="3"> Monday</td>
-                                <tr class="table-dark"> 
-                                  <th scope="col">Date</th>
-                                  <th scope="col">Event</th>
-                                  <th scope="col">Accident?</th>
-                                </tr>
-                              </thead>
-                              <tbody id="table_body"></tbody>
-                            </table>
-                          </section>
-        
-                          <section>
-                                <table class="table table-hover">
-                                  <thead>
-                                    <td colspan="3"> Thursday </td>
-                                    <tr class="table-dark"> 
-                                      <th scope="col">Date</th>
-                                      <th scope="col">Event</th>
-                                      <th scope="col">Accident?</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody id="table_body"></tbody>
-                                </table>
-                              </section>
+      <section>
+        <table class="table table-hover">
+          <thead>
+            <td colspan="3">Tuesday</td>
+            <tr class="table-dark">
+              <th scope="col">Date</th>
+              <th scope="col">Event</th>
+              <th scope="col">Accident?</th>
+            </tr>
+          </thead>
+          <tbody id="table_body"></tbody>
+        </table>
+      </section>
 
-                              <section>
-                                    <table class="table table-hover">
-                                      <thead>
-                                        <td colspan="3"> Wednesday</td>
-                                        <tr class="table-dark"> 
-                                          <th scope="col">Date</th>
-                                          <th scope="col">Event</th>
-                                          <th scope="col">Accident?</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody id="table_body"></tbody>
-                                    </table>
-                                  </section>
+      <section>
+        <table class="table table-hover">
+          <thead>
+            <td colspan="3">Friday</td>
+            <tr class="table-dark">
+              <th scope="col">Date</th>
+              <th scope="col">Event</th>
+              <th scope="col">Accident?</th>
+            </tr>
+          </thead>
+          <tbody id="table_body"></tbody>
+        </table>
+      </section>
 
-                                  <section>
-                                        <table class="table table-hover">
-                                          <thead>
-                                            <td colspan="3"> Tuesday</td>
-                                            <tr class="table-dark"> 
-                                              <th scope="col">Date</th>
-                                              <th scope="col">Event</th>
-                                              <th scope="col">Accident?</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody id="table_body"></tbody>
-                                        </table>
-                                      </section>
+      <section>
+        <table class="table table-hover">
+          <thead>
+            <td colspan="3">Saturday</td>
+            <tr class="table-dark">
+              <th scope="col">Date</th>
+              <th scope="col">Event</th>
+              <th scope="col">Accident?</th>
+            </tr>
+          </thead>
+          <tbody id="table_body"></tbody>
+        </table>
+      </section>
 
-                                      <section>
-                                            <table class="table table-hover">
-                                              <thead>
-                                                <td colspan="3"> Friday</td>
-                                                <tr class="table-dark"> 
-                                                  <th scope="col">Date</th>
-                                                  <th scope="col">Event</th>
-                                                  <th scope="col">Accident?</th>
-                                                </tr>
-                                              </thead>
-                                              <tbody id="table_body"></tbody>
-                                            </table>
-                                          </section>
-
-                                          <section>
-                                                <table class="table table-hover">
-                                                  <thead>
-                                                    <td colspan="3"> Saturday</td>
-                                                    <tr class="table-dark"> 
-                                                      <th scope="col">Date</th>
-                                                      <th scope="col">Event</th>
-                                                      <th scope="col">Accident?</th>
-                                                    </tr>
-                                                  </thead>
-                                                  <tbody id="table_body"></tbody>
-                                                </table>
-                                              </section>
-
-                                              <section>
-                                                    <table class="table table-hover">
-                                                      <thead>
-                                                        <td colspan="3"> Sunday</td>
-                                                        <tr class="table-dark"> 
-                                                          <th scope="col">Date</th>
-                                                          <th scope="col">Event</th>
-                                                          <th scope="col">Accident?</th>
-                                                        </tr>
-                                                      </thead>
-                                                      <tbody id="table_body"></tbody>
-                                                    </table>
-                                                  </section>
-
-   </div>
-
-
-</body>
+      <section>
+        <table class="table table-hover">
+          <thead>
+            <td colspan="3">Sunday</td>
+            <tr class="table-dark">
+              <th scope="col">Date</th>
+              <th scope="col">Event</th>
+              <th scope="col">Accident?</th>
+            </tr>
+          </thead>
+          <tbody id="table_body"></tbody>
+        </table>
+      </section>
+    </div>
+  </body>
 </html>
