@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap");
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: calc(0.5em + 1vh);
 }
 
 body {
-    background-color: #34495E;
+    background-color: #34495e;
 }
 
 .container {
@@ -17,7 +19,7 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -37,7 +39,7 @@ h1 {
     letter-spacing: 2px;
 }
 
-p{
+p {
     color: #fff;
     font-style: italic;
     margin-bottom: 2em;
@@ -45,49 +47,51 @@ p{
 }
 
 .color-area {
-    background-color: #2ABB9B;
+    background-color: #2abb9b;
 }
 
-.form-group * + *{
+.form-group * + * {
     margin-top: 0.5em;
 }
 
-.form-control{
+.form-control {
     width: 60%;
-    border: 1px solid #ccc;;
+    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px 10px;
+}
+
+#date_field {
+    color: #abb7b7;
 }
 
 label {
     text-transform: uppercase;
 }
 
-label:first-child{
+label:first-child {
     margin-top: 1em;
 }
 
 .btn {
     width: 60%;
     text-transform: uppercase;
-    background-color: #E08283;
+    background-color: #e08283;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    padding: 10px 0px;
+    padding: 5px 0px;
     margin-bottom: 1em;
 }
 
-
-
 .table {
-    width: 60%;
+    width: 80%;
     margin: 1em 0;
-    background-color: #fff; 
+    background-color: #fff;
 }
 
-.table thead tr:first-child{
+.table thead tr:first-child {
     text-align: center;
-    background-color: #EB9532;
+    background-color: #eb9532;
 }
