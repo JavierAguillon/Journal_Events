@@ -7,49 +7,40 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Journal Events</title>
   </head>
-  <body>
-    <div class="container">
-      <h1>
-        Journal Events
-      </h1>
+<body>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit sem eget eu
-        lectus, odio penatibus himenaeos conubia nam mattis feugiat litora proin
-        fringilla, lacus vitae consequat suscipit etiam porta purus parturient
-        congue praesent.
-      </p>
+      <header class="container">
+        <h1>
+          Journal Events
+        </h1>
+  
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit sem eget eu
+          lectus, odio penatibus himenaeos conubia nam mattis feugiat litora proin
+          fringilla, lacus vitae consequat suscipit etiam porta purus parturient
+          congue praesent.
+        </p>
+      </header>
 
-      <div class="form-group">
-        <label for="date" class="col-sm-2 col-form-label">Date </label><br />
-        <input
-          class="form-control"
-          type="date"
-          name="calendar"
-          id="date_field"
-        />
-       <br />
-        <label for="event" class="col-sm-2 col-form-label">
-          Event
-        </label>
-        <br />
+    <section class="color-area">
+      <div class="container form-group">
+        <label for="date">Date</label>
+        <br/>
+        <input class="form-control" type="date" name="calendar" id="date_field" required/>
+        <br/>
+        <label for="event" class="col-sm-2 col-form-label"> Event </label>
+        <br/>
         <input class="form-control" type="text" name="event" id="event_field" />
-      <br/>
-          <input
-            type="checkbox"
-            class="custom-control-input"
-            id="accident_switch"
-          />
-          <label class="custom-control-label" for="accident_switch"
-            >Accident?</label
-          >
-          <br/>
-          <button type="button" class="btn btn-danger" id="submit_btn" disabled>
-            Add
-          </button>
+        <br/>
+        <input type="checkbox" class="custom-control-input" id="accident_switch"/>
+        <label class="custom-control-label" for="accident_switch">Accident?</label>
+        <br/>
+        <button type="button" class="btn" id="submit_btn" disabled> Add </button>
       </div>
+    </section>
 
-      <section>
+    <section class="tables-area">
+      <div class="container">
         <table class="table table-hover">
           <thead>
             <td colspan="3">Monday</td>
@@ -61,9 +52,7 @@
           </thead>
           <tbody id="table_body"></tbody>
         </table>
-      </section>
-
-      <section>
+      
         <table class="table table-hover">
           <thead>
             <td colspan="3">Thursday</td>
@@ -75,9 +64,8 @@
           </thead>
           <tbody id="table_body"></tbody>
         </table>
-      </section>
-
-      <section>
+      
+      
         <table class="table table-hover">
           <thead>
             <td colspan="3">Wednesday</td>
@@ -89,9 +77,7 @@
           </thead>
           <tbody id="table_body"></tbody>
         </table>
-      </section>
 
-      <section>
         <table class="table table-hover">
           <thead>
             <td colspan="3">Tuesday</td>
@@ -103,9 +89,7 @@
           </thead>
           <tbody id="table_body"></tbody>
         </table>
-      </section>
 
-      <section>
         <table class="table table-hover">
           <thead>
             <td colspan="3">Friday</td>
@@ -117,9 +101,7 @@
           </thead>
           <tbody id="table_body"></tbody>
         </table>
-      </section>
 
-      <section>
         <table class="table table-hover">
           <thead>
             <td colspan="3">Saturday</td>
@@ -131,9 +113,7 @@
           </thead>
           <tbody id="table_body"></tbody>
         </table>
-      </section>
 
-      <section>
         <table class="table table-hover">
           <thead>
             <td colspan="3">Sunday</td>
@@ -145,7 +125,7 @@
           </thead>
           <tbody id="table_body"></tbody>
         </table>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>

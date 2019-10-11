@@ -8,6 +8,10 @@
     font-size: calc(0.5em + 1vh);
 }
 
+body {
+    background-color: #34495E;
+}
+
 .container {
     display: flex;
     flex-flow: column wrap;
@@ -17,7 +21,15 @@
     margin: 0 auto;
 }
 
+.head {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
+    color: #fff;
     font-weight: 700;
     font-size: 3em;
     margin: 1.5em;
@@ -26,11 +38,45 @@ h1 {
 }
 
 p{
+    color: #fff;
     font-style: italic;
     margin-bottom: 2em;
     text-align: center;
 }
 
+.color-area {
+    background-color: #2ABB9B;
+}
+
 .form-group{
     margin-bottom: 2em;
+    padding: 1.5em 0;
+}
+
+.form-control{
+    width: 60%;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.btn {
+    width: 60%;
+    background-color: #D64541;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px #96281B;
+    cursor: pointer;
+    padding: 10px 0px;
+}
+
+.table {
+    width: 60%;
+    margin: 1em 0;
+    background-color: #fff; 
+}
+
+.table thead tr:first-child{
+    text-align: center;
+    background-color: #EB9532;
 }
