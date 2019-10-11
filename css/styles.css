@@ -55,10 +55,14 @@ p{
 
 .form-control{
     width: 60%;
+    border: 1px solid #ccc;;
     border-radius: 5px;
     padding: 10px 20px;
 }
 
+label {
+    text-transform: uppercase;
+}
 .btn {
     width: 60%;
     background-color: #D64541;
