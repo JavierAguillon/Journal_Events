@@ -48,31 +48,38 @@ p{
     background-color: #2ABB9B;
 }
 
-.form-group{
-    margin-bottom: 2em;
-    padding: 1.5em 0;
+.form-group * + *{
+    margin-top: 0.5em;
 }
 
 .form-control{
     width: 60%;
     border: 1px solid #ccc;;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 5px 10px;
 }
 
 label {
     text-transform: uppercase;
 }
+
+label:first-child{
+    margin-top: 1em;
+}
+
 .btn {
     width: 60%;
-    background-color: #D64541;
+    text-transform: uppercase;
+    background-color: #E08283;
     color: #fff;
     border: none;
-    border-radius: 10px;
-    box-shadow: 1px 2px #96281B;
+    border-radius: 5px;
     cursor: pointer;
     padding: 10px 0px;
+    margin-bottom: 1em;
 }
+
+
 
 .table {
     width: 60%;
