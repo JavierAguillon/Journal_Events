@@ -11,7 +11,9 @@
 }
 
 body {
-    background-color: #34495e;
+    background: #C04848;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
 .container {
@@ -21,13 +23,6 @@ body {
     align-items: center;
     width: 80%;
     margin: 0 auto;
-}
-
-.head {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 h1 {
@@ -46,11 +41,7 @@ p {
     text-align: center;
 }
 
-.color-area {
-    background-color: #2abb9b;
-}
-
-.form-group * + * {
+#form-group * + * {
     margin-top: 0.5em;
 }
 
@@ -67,22 +58,32 @@ p {
 
 label {
     text-transform: uppercase;
+    color: #fff;
 }
 
 label:first-child {
     margin-top: 1em;
 }
 
-.btn {
+input[type="checkbox"] {
+    width: 80px;
+}
+
+#submit_btn {
     width: 60%;
     text-transform: uppercase;
-    background-color: #e08283;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     padding: 5px 0px;
     margin-bottom: 1em;
+    background-color: #3A539B;
+    transition-duration: 0.4s;
+}
+
+#submit_btn:hover {
+    background-color: #3498DB;
 }
 
 .table {
@@ -93,5 +94,16 @@ label:first-child {
 
 .table thead tr:first-child {
     text-align: center;
-    background-color: #eb9532;
+    background-color: #F9690E;
+
+}
+.table #table_body tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+.table #table_body tr:nth-child(even) {
+    background-color: #dadfe1;
+}
+
+.table_active {
+    text-align: center;
 }
